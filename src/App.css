@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.logo {
+  height: 20vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+  .card{
+    text-align: center;
+    /* display: flex; */
+    background: rgb(189, 211, 167);
+    padding: 0px;
+    margin: 5px 0 0 10px;
+    transition: all 300ms ease-out;
+    box-shadow: lightslategray;
+    border-radius: 5%;
+    /* font-size: 8px; */
+    height: 500px;
+    width: 300px;
+    border-width: thick;
+    box-shadow: 1px 1px rgb(187, 178, 178);
+}
+/* img{
+    height: 100px;
+} */
+/* .card:hover{
+    transform: scale(1.05);
+} */
+
+
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  background: -webkit-linear-gradient(left, rgb(49, 51, 51) 0%,rgb(20, 114, 143) 100%);
+ margin: 0px;
+  /* grid-template-rows: repeat(auto-fill,minmax(30px,350px)); */
+}
+
+.img
+{
+  
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 0;
+    /* margin-left: 5px; */
+  
+}
+.img:hover{
+  transform: scale(1.05);
+  margin-left: 5px;
+}
+.car{
+  position: relative;
+  z-index: 0;
+  /* margin-left: 5px; */
+}
+.centered {
+  position: absolute;
+  z-index: 45;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  color: rgb(201, 15, 139);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 90px 20px 50px 20px;
+}
